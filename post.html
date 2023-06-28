@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <figure class="image-container">
+            <img id="chosen-image" />
+            <figcaption id="file-name"></figcaption>
+            <p class="size" id="file-size"></p>
+        </figure>
+        <div>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" id="upload-button" accept="image/*" name="img" />
+                <label for="upload-button">
+                    <i class="fas fa-upload"></i> &nbsp; Choose A Photo
+                </label><br>
+                <label for="upload-button">
+                    <input type="text" id="title" name="title" />
+                </label><br>
+                <label for="upload-button">
+                    <input type="text" id="caption" name="caption" />
+                </label><br>
+                <label>
+                    <button><i class="fas fa-upload"></i>Upload</button>
+                </label>
+            </form>
+        </div>
+    </div>
+    <script src="post.js"></script>
+</body>
+</html>
